@@ -1,0 +1,89 @@
+*{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+.navBar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.SubNavChild{
+    margin: 10px 20px;
+}
+.navLink:hover{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.HomeLink{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.listBeforeClick{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.PhoneNumber{
+    font-size: 20px;
+    text-align: center;
+}
+.PhoneIcon, .facebook{
+    width: 30px;
+    height: 30px;
+}
+.logo{
+    width: 300px;
+    height: 110px;
+}
+.BurgerBeforeClick{
+    display: none;
+    margin-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+@media (max-width: 640px){
+    .listBeforeClick{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+    }
+    .listAfterClick{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: fit-content;
+    }
+    .BurgerBeforeClick{
+        display: block;
+    }
+    .BurgerAfterClick{
+        background-color: dimgrey;
+    }
+    .logo{
+        width: 150px;
+        height: 55px;
+    }
+    .phone{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+    }
+    .PhoneNumber{
+        display: flex;
+        flex-direction: row;
+    }
+    .HomeLink{
+        border-bottom: 2px solid transparent
+    }
+    .HomeDiv{
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        padding-bottom: 10px;
+    }
+}
